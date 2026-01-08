@@ -84,7 +84,34 @@
 <script type="text/javascript">
 
     // YOUR CODE HERE
-    // ...
+    function add(){
+
+        /* je n'ai pas reussi à décomposer la suite de nombre saisie */
+
+        let numbers = document.getElementById("numbers").value; /* recuperer la suite de nombres saisie*/
+        console.log(numbers)
+        let suite = numbers.split(",");  /* décomposer la suite de nombres */
+        console.log(suite)
+        let suiteNumbers = parseInt(suite); /* j'ai essaye de les convertir en nombre */
+        console.log(suiteNumbers)
+        let tab = [];     /* creation d'un tableau vide */
+        tab.push(suiteNumbers)  /* envoyer les nombres dans le tableau */
+        console.log(tab)
+        let sum = 0;    /* creation de la focntion somme initialisé a 0 */
+        for (i=0; i<tab.length; i++){   /* boucle for qui va prendre chaque nombre disponible dans le tableau en partant du 1er jusqu'au dernier */
+            sum += tab[i];
+        }
+        console.log(sum)
+
+        displayOneResult("la somme est ", sum)  /* fonction disponinle dans tools.js qui permet de donner le resultat */
+
+        
+        
+
+        
+        
+        
+    }
     
 </script>
 
